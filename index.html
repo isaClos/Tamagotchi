@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Tamagotchi V2</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Isabelle Closse">
+	<meta name="description" content="Un jeu de Tamagotchi.">
+	<meta name="robots" content="all">
+
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Saira+Stencil+One&display=swap" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+
+<body>
+		<div id="contain" class="container-fluid">
+
+				<div class="row wrapper">
+					<div id="wrapper">
+						<div id="carrousel" class="">
+							<div class="plan p1" id="p1" onclick="initialiselav()">Hygiène</div>
+							<div class="plan p2" id="p2" onclick="initialisesom()">Sommeil</div>
+							<div class="plan p3" id="p3" onclick="initialisefaim()">Faim</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="" class="row">
+
+					<div class="col-md-4 offset-6">
+						<div class="">
+							<div id="snackbarsom">J'ai Sommeil !!! </div>
+						</div>
+						<div class="">
+							<div id="snackbar1som">J'ai SUPER Envie de Dormir !!! </div>
+						</div>
+
+						<div class="">
+							<div id="snackbar">J'ai Faim !!! </div>
+						</div>
+						<div class="">
+							<div id="snackbar1">J'ai SUPER Faim !!! </div>
+						</div>
+
+						<div class="">
+							<div id="snackbarlav">Je suis crado !!! </div>
+						</div>
+						<div class="">
+							<div id="snackbar1lav">J'ai VRAIMENT Besoin d'un Bain!!! </div>
+						</div>
+					</div>
+				</div>
+				<div class="row cdes">
+					<div  class=" col-md-6 ">
+						<button class="btn btn2 btn-lg" onclick="start()">Lancer le jeu</button>
+					</div>
+
+					<div  class=" col-md-6 ">
+						<button type="button" class="btn btn1 btn-lg ">
+							Points joueur<span class="badge badge-pill badge-dark" id="ptjoueur"></span></button>
+							<button type="button" class="btn btn1 btn-lg ">
+								Points Maître du jeu ! <span class="badge badge-pill badge-dark" id="ptordi"></span> </button>
+					</div>
+				</div>
+
+			<div id="countJeu" >Durée de la partie : <span id="bipJeu" ></span></div>
+
+		</div>
+
+</body>
+
+<script src="js/jQuery/jquery.min.js"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
+<script src="js/dev.js"></script>
+</html>
